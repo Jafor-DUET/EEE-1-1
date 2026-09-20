@@ -1,0 +1,28 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    float req,r1,r2,r3;
+    int type;
+    printf("enter the value of r1,r2,r3:\n");
+    scanf("%f%f%f",&r1,&r2,&r3);
+    
+    printf("press 1 for series and 2 for parallal\n");
+    scanf("%d",&type);
+    
+    if(type==1)
+    {
+        req=r1+r2+r3;
+        printf("Req=%.2f",req);
+    }
+    else if(type==2)
+    {
+        req=(r1*r2*r3)/((r1*r2)+(r2*r3)+(r1*r3));
+        printf("Req=%.2f",req);
+    }
+    else
+    printf("enter the valid number");
+    
+
+    return 0;
+}
